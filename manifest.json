@@ -15,14 +15,11 @@
     "128": "icon128.png"
   },
   "permissions": [
-    "*://*/*",
-    "tabs"
+    "activeTab"
   ],
   "content_scripts": [
     {
-      "matches": ["*://*/*"],
       "js": ["jquery.js", "contentscript.js"],
-      "css": ["style.css"],
       "run_at": "document_end",
       "all_frames": true
     }
